@@ -15,18 +15,7 @@
     </parent>
 
     <modules>
-        <!--<module>service-stubs/service-mgt</module>-->
-        <!--<module>service-stubs/webapp-mgt</module>-->
-        <!--<module>components/service-mgt</module>-->
         <module>components/webapp-mgt</module>
-        <!--<module>components/javaee</module>-->
-        <!--<module>components/monitoring</module>-->
-        <!--<module>features/as-runtimes</module>-->
-        <!--<module>features/service-mgt</module>-->
-        <!--<module>features/webapp-mgt</module>-->
-        <!--<module>features/javaee</module>-->
-        <!--<module>features/monitoring</module>-->
-        <!--<module>features/categories</module>-->
     </modules>
 
     <scm>
