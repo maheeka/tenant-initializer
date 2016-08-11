@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon.deployment</groupId>
-    <artifactId>carbon-deployment</artifactId>
+    <groupId>org.wso2.intcloud</groupId>
+    <artifactId>intcloud</artifactId>
     <packaging>pom</packaging>
     <version>4.7.1-SNAPSHOT</version>
     <name>WSO2 Carbon - Deployment Aggregator Pom</name>
@@ -15,26 +15,15 @@
     </parent>
 
     <modules>
-        <!--<module>service-stubs/service-mgt</module>-->
-        <!--<module>service-stubs/webapp-mgt</module>-->
-        <!--<module>components/service-mgt</module>-->
         <module>components/webapp-mgt</module>
-        <!--<module>components/javaee</module>-->
-        <!--<module>components/monitoring</module>-->
-        <!--<module>features/as-runtimes</module>-->
-        <!--<module>features/service-mgt</module>-->
-        <!--<module>features/webapp-mgt</module>-->
-        <!--<module>features/javaee</module>-->
-        <!--<module>features/monitoring</module>-->
-        <!--<module>features/categories</module>-->
     </modules>
 
-    <scm>
-        <url>https://github.com/wso2/carbon-deployment.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/carbon-deployment.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/carbon-deployment.git</connection>
-        <tag>HEAD</tag>
-    </scm>
+    <!--<scm>-->
+        <!--<url>https://github.com/wso2/carbon-deployment.git</url>-->
+        <!--<developerConnection>scm:git:https://github.com/wso2/carbon-deployment.git</developerConnection>-->
+        <!--<connection>scm:git:https://github.com/wso2/carbon-deployment.git</connection>-->
+        <!--<tag>HEAD</tag>-->
+    <!--</scm>-->
 
     <dependencyManagement>
         <dependencies>
