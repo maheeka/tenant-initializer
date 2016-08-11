@@ -1,0 +1,20 @@
+<component xmlns="http://products.wso2.org/carbon">
+    <!--<deployers>-->
+        <!--<deployer>-->
+            <!--<directory>artifactMetafiles/webapp</directory>-->
+            <!--<extension>xml</extension>-->
+            <!--<class>org.wso2.carbon.webapp.mgt.WebappMetadataDeployer</class>-->
+        <!--</deployer>-->
+    <!--</deployers>-->
+
+    <!--<ManagementPermissions>-->
+        <!--<ManagementPermission>-->
+            <!--<DisplayName>Webapps</DisplayName>-->
+            <!--<ResourceId>/permission/admin/manage/add/webapp</ResourceId>-->
+        <!--</ManagementPermission>-->
+        <!--<ManagementPermission>-->
+            <!--<DisplayName>Webapps</DisplayName>-->
+            <!--<ResourceId>/permission/admin/manage/modify/webapp</ResourceId>-->
+        <!--</ManagementPermission>-->
+    <!--</ManagementPermissions>-->
+</component>
