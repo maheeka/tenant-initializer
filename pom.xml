@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon.deployment</groupId>
-    <artifactId>carbon-deployment</artifactId>
+    <groupId>org.wso2.intcloud</groupId>
+    <artifactId>integration-cloud</artifactId>
     <packaging>pom</packaging>
-    <version>4.7.1-SNAPSHOT</version>
-    <name>WSO2 Carbon - Deployment Aggregator Pom</name>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>WSO2 Integration Cloud</name>
     <url>http://wso2.org</url>
 
     <parent>
@@ -15,13 +15,13 @@
     </parent>
 
     <modules>
-        <module>components/webapp-mgt</module>
+        <module>components/tenant-mgt</module>
     </modules>
 
     <scm>
-        <url>https://github.com/wso2/carbon-deployment.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/carbon-deployment.git</developerConnection>
-        <connection>scm:git:https://github.com/wso2/carbon-deployment.git</connection>
+        <url>https://github.com/wso2/integration-cloud.git</url>
+        <developerConnection>scm:git:https://github.com/wso2/integration-cloud.git</developerConnection>
+        <connection>scm:git:https://github.com/wso2/integration-cloud.git</connection>
         <tag>HEAD</tag>
     </scm>
 
@@ -1275,8 +1275,7 @@
                 </property>
             </activation>
             <modules>
-                <module>components/service-mgt</module>
-                <module>components/webapp-mgt</module>
+                <module>components/tenant-mgt</module>
             </modules>
         </profile>
         <profile>
@@ -1288,8 +1287,7 @@
                 </property>
             </activation>
             <modules>
-                <module>components/service-mgt</module>
-                <module>components/webapp-mgt</module>
+                <module>components/tenant-mgt</module>
             </modules>
         </profile>
     </profiles>

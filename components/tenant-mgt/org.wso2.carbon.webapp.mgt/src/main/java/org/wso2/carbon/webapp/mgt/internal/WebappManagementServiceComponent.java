@@ -39,7 +39,7 @@ public class WebappManagementServiceComponent {
     private static ApplicationManagerService applicationManager;
 
     protected void activate(ComponentContext ctx) {
-        log.info("********** 3");
+        log.info("********** 441");
         TenantMgtAdminService tenantMgtAdminService = new TenantMgtAdminService();
         //TenantMgtAdminServiceStub tenantMgtAdminServiceStub =
         log.info("tenant admin service created");
@@ -50,10 +50,10 @@ public class WebappManagementServiceComponent {
         tenantInfoBean.setAdminPassword("admin123");
         tenantInfoBean.setFirstname("Maheeka");
         tenantInfoBean.setLastname("Maheeka");
-        tenantInfoBean.setEmail("admin@abc.com");
-        tenantInfoBean.setTenantDomain("abc.com");
+        tenantInfoBean.setEmail("admin@abcde.com");
+        tenantInfoBean.setTenantDomain("abcde.com");
         tenantInfoBean.setSuccessKey("");
-        tenantInfoBean.setTenantId(400);
+        tenantInfoBean.setTenantId(402);
         tenantInfoBean.setUsagePlan("Demo");
         try {
             tenantMgtAdminService.addTenant(tenantInfoBean);

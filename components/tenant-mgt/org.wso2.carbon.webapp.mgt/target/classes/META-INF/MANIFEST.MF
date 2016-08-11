@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Service-Component: OSGI-INF/serviceComponents.xml
+Built-By: maheeka
+Tool: Bnd-1.43.0
+Bundle-Name: org.wso2.carbon.webapp.mgt
+Created-By: Apache Maven Bundle Plugin
+Axis2Deployer: WebappMetadataDeployer
+Bundle-Vendor: WSO2
+DynamicImport-Package: *
+Build-Jdk: 1.7.0_67
+Bundle-Version: 1.0.0.SNAPSHOT
+Bnd-LastModified: 1470898709609
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.wso2.carbon.webapp.mgt.internal.WebappManagement
+ Activator
+Bundle-Description: Webapp management BE fuctionalities
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.wso2.carbon.webapp.mgt
+Import-Package: org.apache.axis2.engine;version="[1.6.1.wso2v14,1.7.0)
+ ",org.apache.commons.logging;resolution:=optional;version="[1.2,2)",o
+ rg.osgi.framework;version="[1.7,2)",org.osgi.service.component;resolu
+ tion:=optional;version="[1.2,2)",org.wso2.carbon.application.deployer
+ .service;resolution:=optional;version="[4.4,5)",org.wso2.carbon.strat
+ os.common.beans;resolution:=optional;version="[4.5,5)",org.wso2.carbo
+ n.tenant.mgt.services;resolution:=optional;version="[4.6,5)",org.wso2
+ .carbon.utils;resolution:=optional;version="[4.4,5)"
+Bundle-DocURL: http://www.wso2.org/
+
