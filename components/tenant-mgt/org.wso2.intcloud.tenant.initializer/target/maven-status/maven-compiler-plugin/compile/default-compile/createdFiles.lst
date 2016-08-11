@@ -1,3 +1,2 @@
-org/wso2/carbon/webapp/mgt/internal/WebappManagementActivator$1.class
-org/wso2/carbon/webapp/mgt/internal/WebappManagementActivator.class
-org/wso2/carbon/webapp/mgt/internal/WebappManagementServiceComponent.class
+org/wso2/intcloud/tenant/initializer/internal/TenantInitializerActivator.class
+org/wso2/intcloud/tenant/initializer/internal/TenantInitializerServiceComponent.class

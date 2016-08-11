@@ -13,18 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.wso2.carbon.webapp.mgt.internal;
+package org.wso2.intcloud.tenant.initializer.internal;
 
 import org.apache.axis2.engine.ListenerManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.osgi.service.component.ComponentContext;
-import org.wso2.carbon.application.deployer.service.ApplicationManagerService;
 import org.wso2.carbon.stratos.common.beans.TenantInfoBean;
 import org.wso2.carbon.tenant.mgt.services.TenantMgtAdminService;
 
 /**
- * @scr.component name="org.wso2.carbon.webapp.mgt.internal.WebappManagementServiceComponent"
+ * @scr.component name="org.wso2.intcloud.tenant.initializer.internal.TenantInitializerServiceComponent"
  *                immediate="true"
  * @scr.reference name="listener.manager"
  *                interface="org.apache.axis2.engine.ListenerManager"
@@ -33,15 +32,12 @@ import org.wso2.carbon.tenant.mgt.services.TenantMgtAdminService;
  *                bind="setListenerManager"
  *                unbind="unsetListenerManager"
  */
-public class WebappManagementServiceComponent {
-    private static final Log log = LogFactory.getLog(WebappManagementServiceComponent.class);
-
-    private static ApplicationManagerService applicationManager;
+public class TenantInitializerServiceComponent {
+    private static final Log log = LogFactory.getLog(TenantInitializerServiceComponent.class);
 
     protected void activate(ComponentContext ctx) {
-        log.info("********** 405");
+        log.info("********** 409");
         TenantMgtAdminService tenantMgtAdminService = new TenantMgtAdminService();
-        //TenantMgtAdminServiceStub tenantMgtAdminServiceStub =
         log.info("tenant admin service created");
 
         TenantInfoBean tenantInfoBean = new TenantInfoBean();
@@ -50,10 +46,10 @@ public class WebappManagementServiceComponent {
         tenantInfoBean.setAdminPassword("admin123");
         tenantInfoBean.setFirstname("Maheeka");
         tenantInfoBean.setLastname("Maheeka");
-        tenantInfoBean.setEmail("admin@abcdefgh.com");
-        tenantInfoBean.setTenantDomain("abcdefgh.com");
+        tenantInfoBean.setEmail("admin@abc409.com");
+        tenantInfoBean.setTenantDomain("abc409.com");
         tenantInfoBean.setSuccessKey("");
-        tenantInfoBean.setTenantId(405);
+        tenantInfoBean.setTenantId(409);
         tenantInfoBean.setUsagePlan("Demo");
         try {
             tenantMgtAdminService.addTenant(tenantInfoBean);
